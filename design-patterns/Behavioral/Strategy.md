@@ -1,7 +1,5 @@
-# 🎯 Strategy Pattern (Ví dụ đơn giản)
-
-## Ý tưởng
-Strategy Pattern cho phép định nghĩa nhiều thuật toán khác nhau và hoán đổi chúng một cách linh hoạt **mà không cần thay đổi code client**.  
+## Định nghĩa
+Cho phép định nghĩa nhiều thuật toán khác nhau và hoán đổi chúng một cách linh hoạt **mà không cần thay đổi code client**.  
 
 ---
 
@@ -52,3 +50,4 @@ console.log("Thuế USA:", calculator.getTax(1000));
 // Tính thuế ở Nhật
 calculator.setStrategy(new JapanTax());
 console.log("Thuế Japan:", calculator.getTax(1000));
+
