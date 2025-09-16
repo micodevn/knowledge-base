@@ -1,5 +1,5 @@
 ## Định nghĩa
-Xác định một tập hợp các thuật toán, đưa mỗi thuật toán vào một lớp riêng biệt, tách logic nghiệp vụ để không ảnh hưởng lẫn nhau.
+Xác định một tập hợp các thuật toán, đưa mỗi thuật toán vào một lớp riêng biệt để tách logic nghiệp vụ giúp chúng không ảnh hưởng lẫn nhau.
 ## Ví dụ
 
 ```js
@@ -20,6 +20,7 @@ function calculateTax(amount, country) {
 console.log("Thuế VN:", calculateTax(1000, "vietnam"));
 console.log("Thuế USA:", calculateTax(1000, "usa"));
 console.log("Thuế Japan:", calculateTax(1000, "japan"));
+
 
 
 
