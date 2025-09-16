@@ -1,6 +1,6 @@
 ## Định nghĩa
 Xác định một tập hợp các thuật toán, đưa mỗi thuật toán vào một lớp riêng biệt
-## Ví dụ: Tính thuế theo quốc gia (Node.js)
+## Ví dụ
 
 ```js
 // Tập hợp các strategy dưới dạng object
@@ -20,4 +20,5 @@ function calculateTax(amount, country) {
 console.log("Thuế VN:", calculateTax(1000, "vietnam"));
 console.log("Thuế USA:", calculateTax(1000, "usa"));
 console.log("Thuế Japan:", calculateTax(1000, "japan"));
+
 
