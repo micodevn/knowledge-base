@@ -1,52 +1,23 @@
 ## Định nghĩa
-Cho phép định nghĩa nhiều thuật toán khác nhau và hoán đổi chúng một cách linh hoạt **mà không cần thay đổi code client**.  
-
+Xác định một tập hợp các thuật toán, đưa mỗi thuật toán vào một lớp riêng biệt
 ## Ví dụ: Tính thuế theo quốc gia (Node.js)
 
 ```js
-// 1. Các chiến lược (Strategy)
-class VietnamTax {
-  calculate(amount) {
-    return amount * 0.1; // 10% VAT
-  }
+// Tập hợp các strategy dưới dạng object
+const taxStrategies = {
+  vietnam: (amount) => amount * 0.1,   // 10%
+  usa: (amount) => amount * 0.07,      // 7%
+  japan: (amount) => amount * 0.08     // 8%
+};
+
+function calculateTax(amount, country) {
+  const strategy = taxStrategies[country];
+  if (!strategy) throw new Error("Không hỗ trợ quốc gia này!");
+  return strategy(amount);
 }
 
-class UsaTax {
-  calculate(amount) {
-    return amount * 0.07; // 7% tax
-  }
-}
-
-class JapanTax {
-  calculate(amount) {
-    return amount * 0.08; // 8% tax
-  }
-}
-
-// 2. Context
-class TaxCalculator {
-  setStrategy(strategy) {
-    this.strategy = strategy;
-  }
-
-  getTax(amount) {
-    return this.strategy.calculate(amount);
-  }
-}
-
-// 3. Client code
-const calculator = new TaxCalculator();
-
-// Tính thuế ở VN
-calculator.setStrategy(new VietnamTax());
-console.log("Thuế VN:", calculator.getTax(1000));
-
-// Tính thuế ở Mỹ
-calculator.setStrategy(new UsaTax());
-console.log("Thuế USA:", calculator.getTax(1000));
-
-// Tính thuế ở Nhật
-calculator.setStrategy(new JapanTax());
-console.log("Thuế Japan:", calculator.getTax(1000));
-
+// Client code
+console.log("Thuế VN:", calculateTax(1000, "vietnam"));
+console.log("Thuế USA:", calculateTax(1000, "usa"));
+console.log("Thuế Japan:", calculateTax(1000, "japan"));
 
