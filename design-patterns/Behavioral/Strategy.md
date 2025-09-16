@@ -1,3 +1,13 @@
+# 🎯 Strategy Pattern (Ví dụ đơn giản)
+
+## Ý tưởng
+Strategy Pattern cho phép định nghĩa nhiều thuật toán khác nhau và hoán đổi chúng một cách linh hoạt **mà không cần thay đổi code client**.  
+
+---
+
+## Ví dụ: Tính thuế theo quốc gia (Node.js)
+
+```js
 // 1. Các chiến lược (Strategy)
 class VietnamTax {
   calculate(amount) {
