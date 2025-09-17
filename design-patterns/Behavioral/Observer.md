@@ -1,5 +1,5 @@
 ## Định nghĩa
-- Xác định cơ chế đăng ký để <b><u>thông báo các sự kiện xảy ra của chủ thể cho những đối tượng đang quan sát nó</u></b>
+- Xác định cơ chế đăng ký để ``thông báo các sự kiện xảy ra của chủ thể cho những đối tượng đang quan sát nó``
 - Dạng publisher, subscriber
 ## Ví dụ
 
