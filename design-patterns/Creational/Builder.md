@@ -1,6 +1,7 @@
 ## Định nghĩa
     - Tách quá trình khởi tạo một đối tượng thành nhiều bước nhỏ
     - Sử dụng khi có quá nhiều tham số,nhiều biến thể của đối tượng nhưng vẫn giữ code gọn gàng.
+    ( Giống cách sử dụng query builder dùng addSelect )
 ## Ví dụ
 ```js
 class Car {
