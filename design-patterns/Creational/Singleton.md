@@ -9,9 +9,6 @@
     - Private constructor → để chặn việc tạo instance từ bên ngoài (new).
     - Static instance → giữ đối tượng duy nhất.
     - Public static method (thường là getInstance()) → để lấy ra instance này.
-## Khi nào dùng
-    - Khi việc tạo đối tượng mới tốn kém (ví dụ: nhiều bước config, đọc dữ liệu từ DB, tính toán phức tạp).
-    - Khi bạn muốn copy đối tượng kèm theo trạng thái hiện tại của nó.
 ## Ví dụ
 ```js
 cclass AppConfig {
