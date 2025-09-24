@@ -11,7 +11,7 @@
     - Public static method (thường là getInstance()) → để lấy ra instance này.
 ## Ví dụ
 ```js
-cclass AppConfig {
+class AppConfig {
   constructor() {
     // Nếu đã tồn tại instance thì trả về luôn
     if (AppConfig.instance) {
