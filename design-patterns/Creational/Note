@@ -1,3 +1,3 @@
 - Factory Method và Abstract Factory
  -> Đều có mục đích khởi tạo đối tượng core có những dặc điểm giống nhau
- -> giảm sự phụ thuộc vào các class con, dễ dàng thay thế, implement
+ -> Giảm sự phụ thuộc vào các class con, dễ dàng thay thế, implement
