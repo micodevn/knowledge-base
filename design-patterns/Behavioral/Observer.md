@@ -1,6 +1,6 @@
 ## Định nghĩa
-- Xác định cơ chế đăng ký để ``thông báo các sự kiện xảy ra của chủ thể cho những đối tượng đang quan sát nó``
-- Dạng publisher, subscriber
+    - Xác định cơ chế đăng ký để thông báo các sự kiện xảy ra của chủ thể cho những đối tượng đang quan sát nó
+    - Dạng publisher, subscriber
 ## Ví dụ
 
 ```js
