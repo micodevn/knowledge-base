@@ -45,7 +45,7 @@
 
 **Horizontal scaling (scale-out)**
 
-    - Đóng gói ( container ):Thuận lợi scale số lượng instance khi tải tăng
+    - Đóng gói ( container ): Thuận lợi scale số lượng instance khi tải tăng
 
 **Autoscaling**
 
