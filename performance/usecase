@@ -1,4 +1,4 @@
 I. Bài toán lấy dữ liệu từ cache
-- Lấy dữ liệu từ cache -> ko có -> đọc trong DB -> vào cache
-- Vấn đề: Khi có lượng CCU cao ( 5000 request đồng thời ), thì có thể 5000 request đó sẽ ko đọc được cache -> thực hiện vào DB đọc và ghi lại dữ liệu
+- Lấy dữ liệu từ cache -> ko có -> đọc trong DB -> ghi lại dữ liệu vào cache
+- Vấn đề: Khi có lượng CCU cao ( 5000 request đồng thời ), thì có thể 5000 request đó sẽ ko đọc được cache -> thực hiện vào DB đọc và ghi lại dữ liệu gây bottleneck DB
 - Giải pháp: chỉ xử lý 1 request duy nhất được phép đọc vào DB để ghi lại dữ liệu vào cache, lock tất cả request kia lại theo x giây trong quá trình đọc DB và ghi cache
